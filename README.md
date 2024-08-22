@@ -1,4 +1,4 @@
-int irpin = 13;        // Define the pin connected to the IR sensor
+int irpin = 2;        // Define the pin connected to the IR sensor
 int irvalue;          // Variable to store the value read from the IR sensor
 
 void setup() {  // initialize digital pin 13 as an output.
