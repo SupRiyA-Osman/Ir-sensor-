@@ -1,15 +1,15 @@
-int irpin = 7;        // Define the pin connected to the IR sensor
+int irpin = 13;        // Define the pin connected to the IR sensor
 int irvalue;          // Variable to store the value read from the IR sensor
 
-void setup() {
-  pinMode(irpin, INPUT);  // Set the IR pin as input
-  Serial.begin(9600);     // Initialize serial communication at 9600 bps
+void setup() {  // initialize digital pin 13 as an output.
+   pinMode(2, OUTPUT);
 }
 
+// the loop function runs over and over again forever
+
 void loop() {
-    
-  irvalue = digitalRead(irpin);   // Read the value from the IR sensor
-  Serial.print("irvalue=");       // Print label for the IR value
-  Serial.print(irvalue);        // Print the actual IR value and move to a new line
-  delay(500);                     // Small delay to make the output readable
+   digitalWrite(2, HIGH); // turn the LED on (HIGH is the voltage level)
+   delay(1000); // wait for a second
+   digitalWrite(2, LOW); // turn the LED off by making the voltage LOW
+   delay(1000); // wait for a second
 }
